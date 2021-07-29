@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    min-height: 80vw;
+
+    
+    h2{
+        width: max-content;
+        height: max-content;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 15px 50px;
+        border-radius: 20px;
+
+        background: #e0e0e0;
+        box-shadow:  5px 5px 12px #5a5a5a,
+                     -5px -5px 12px #ffffff;
+    }
+
+    .weather-container{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+
+        
+        #error{
+            display: none;
+            grid-area : 1 / 2;
+        }
+
+        .card{
+            margin: 30px;
+            padding : 20px;
+            height: max-content;
+            background: #e0e0e0;
+            box-shadow:  5px 5px 12px #5a5a5a,
+                         -5px -5px 12px #ffffff;
+            
+            font-size: 1.5rem;
+
+            h3{
+                color : var(--font-color);
+                font-size: 1.5rem;
+                text-decoration: underline;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+
+}
+

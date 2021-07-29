@@ -1,0 +1,39 @@
+header{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    padding : 15px;
+    
+    .logo-header{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .search-container{
+        border-radius: 10px;
+        position: relative;
+
+        height: 40px;
+        border-radius: 20px;
+        background: #e0e0e0;
+        box-shadow:  5px 5px 12px #5a5a5a,
+                     -5px -5px 12px #ffffff;
+
+        input{
+            width: 90%;
+            padding: 5px;
+            background-color: rgba($color: #e0e0e0, $alpha: 0.5);
+            border : none;
+            height : 100%;
+        }
+        button{
+            height: 100%;
+            width: 9%;
+            border: none;
+            background-color: transparent;
+            cursor : pointer;
+        }
+        
+    }
+
+}

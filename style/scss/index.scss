@@ -1,0 +1,30 @@
+@import './_header.scss';
+@import './_container.scss';
+
+// reset
+*, ::before , ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+:root{
+    --bg-color : #e0e0e0;
+    --font-color : #333;
+}
+
+body{
+    background-color: var(--bg-color);
+    color : var(--font-color);
+    font-family: 'Poppins';
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .weather-container{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(3 , 1fr) !important;
+    }
+}
